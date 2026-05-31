@@ -1,17 +1,17 @@
 echo "
- ██ ███████ ██████  ███████ ███████        █████  ███    ███ ██████  ██  
-██  ██      ██   ██ ██      ██            ██   ██ ████  ████ ██   ██  ██ 
-██  █████   ██████  █████   ███████ █████ ███████ ██ ████ ██ ██   ██  ██ 
-██  ██      ██      ██           ██       ██   ██ ██  ██  ██ ██   ██  ██ 
- ██ ██      ██      ███████ ███████       ██   ██ ██      ██ ██████  ██  
+  ____    _   _   _   _   _   _   ___   _   _    ____       ____  
+|  _ \  | | | | | \ | | | \ | | |_ _| | \ | |  / ___|     |___ \ 
+| |_) | | | | | |  \| | |  \| |  | |  |  \| | | |  _        __) |
+|  _ <  | |_| | | |\  | | |\  |  | |  | |\  | | |_| |      / __/ 
+|_| \_\  \___/  |_| \_| |_| \_| |___| |_| \_|  \____|     |_____|  
                                                                          
 "
-echo Free PowerEdge Server Intel 16TB
+echo Free IndiaHost VPS HOSTING Server Intel 16TB
 echo - 16TB RAM
 echo - 120core Intel Xeon
 echo Pterodactyl Supported Vps 24x7 Uptime
 
-read -p "Are you sure you want to proceed? (y/n): " -n 1 -r
+read -p "Are you sure To Create Free VPS? (y/n): " -n 1 -r
 echo
 
 if [[ ! $REPLY =~ ^[Yy]$ ]]; then
@@ -34,16 +34,16 @@ RUN printf "systemctl start systemd-logind" >> /etc/profile
 ENTRYPOINT ["/sbin/init"]
 EOF
 
-echo Installing PowerEdge
+echo Installing IndiaHost
 docker build -t utmp . > /dev/null 2>&1
-echo Done installing PowerEdge
+echo Done installing IndiaHost
 
-echo To make your PowerEdge. Please run
+echo To make your Indiahost free vps. Please run
 echo "
-██████   █████  ███████ ██   ██     ███    ███  █████  ██   ██ ███████ 
-██   ██ ██   ██ ██      ██   ██     ████  ████ ██   ██ ██  ██  ██      
-██████  ███████ ███████ ███████     ██ ████ ██ ███████ █████   █████   
-██   ██ ██   ██      ██ ██   ██     ██  ██  ██ ██   ██ ██  ██  ██      
-██████  ██   ██ ███████ ██   ██     ██      ██ ██   ██ ██   ██ ███████                                    
+ ____       _      ____    _   _       __  __      _      _  __  _____       ____    _   _ 
+| __ )     / \    / ___|  | | | |     |  \/  |    / \    | |/ / | ____|     / ___|  | | | |
+|  _ \    / _ \   \___ \  | |_| |     | |\/| |   / _ \   | ' /  |  _|       \___ \  | |_| |
+| |_) |  / ___ \   ___) | |  _  |     |  |  | |  / ___ \  | . \  | |___   _   ___) | |  _  |
+|____/  /_/   \_\ |____/  |_| |_|     |_|  |_| /_/   \_\ |_|\_\ |_____| (_) |____/  |_| |_|                                    
 "
-echo You can create as many poweredges as you want, Just press the plus icon and run the command again!
+echo You can create as many indiahost as you want, Just press the plus icon and run the command again!
